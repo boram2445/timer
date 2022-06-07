@@ -117,6 +117,16 @@ body{
   color:#617199;
 }
 
+.timer-bottom .start-btn.on{
+  background-color: #5180FF;
+  color:white;
+}
+
+.timer-bottom .reset-btn.on{
+  background-color: #FB7099;
+  color:white;
+}
+
 .timer-bottom button::before{
   margin-right: 5px;
   display: inline-block;
