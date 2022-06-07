@@ -1,0 +1,141 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+* { 
+  font-family: Pretendard;
+}
+
+html,body{
+  margin:0;
+  height: 100%;
+}
+
+body{
+  background: radial-gradient(96.74% 276.79% at 3.59% 5.28%, #F0F4FF 0%, #A5B6EE 100%);
+}
+
+.logo{
+  padding-top:72px;
+  text-align: center;
+}
+
+.logo img{
+  height: 48px;
+}
+
+.timer{
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 0 40px;
+  width: 400px;
+  background: linear-gradient(144.07deg, #5572BB 2.13%, #374B7C 102.97%);
+  box-shadow: 20px 20px 60px 10px #374B7C66;
+  border-radius: 30px;
+  position: relative;
+}
+
+.timer-header{
+  text-align: center;
+  line-height: 29px;
+  color:white;
+  font-size: 24px;
+  font-style: bold;
+}
+
+.timer-header::after {
+  margin: 23px auto 33px;
+  display: block;
+  content: '';
+  width: 312px;
+  height: 1px;
+  background-color: #3D538A;
+}
+
+.timer-middle{
+  display: flex;
+  margin: 0 auto;
+}
+
+.mid-time{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 40px;
+  font-weight: 700;
+  color:white;
+  border-radius: 4px;
+  border:1px solid #354971;
+  background: linear-gradient(314.28deg, #304577 0%, #4C65A0 83%);
+  cursor: pointer;
+}
+
+.mid-time::before{
+  position: absolute;
+  bottom: 84px;
+  left: 40px;
+  transform: translateX(-50%);
+  display: block;
+  content: '';
+  font-size: 12px;
+  line-height: 14px;
+  color: #A5B6EE;
+}
+
+.mid-time.hour::before{
+  content: 'HRS';
+}
+
+.mid-time.min::before{
+  content: 'MIN';
+}
+
+.mid-time.sec::before{
+  content:'SEC';
+}
+
+.dot{
+  font-family: Pretendard;
+  margin: auto 8px;
+}
+
+.timer-bottom{
+  display: flex;
+  gap: 12px;
+}
+
+.timer-bottom button{
+  margin-top: 40px;
+  padding: 15px 0;
+  width: 112px;
+  border: 1px solid #324577;
+  border-radius: 50px;
+  box-shadow: 1px 1px 1px 0px #0000000D inset;
+  background-color: #324577;
+  color:#617199;
+}
+
+.timer-bottom button::before{
+  margin-right: 5px;
+  display: inline-block;
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-image: url('../img/icon-start-disabled.svg');
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+}
+
+.timer-bottom .reset-btn::before{
+  background-image: url('../img/icon-reset-disabled.svg');
+}
+
+.coorporation{
+  margin-top: 60px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color:#8596BF;
+}
