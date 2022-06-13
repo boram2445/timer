@@ -72,6 +72,10 @@ body{
   cursor: pointer;
 }
 
+.mid-time:hover{
+  opacity: 0.8;
+}
+
 .mid-time::before{
   position: absolute;
   bottom: 84px;
@@ -117,16 +121,6 @@ body{
   color:#617199;
 }
 
-.timer-bottom .start-btn.on{
-  background-color: #5180FF;
-  color:white;
-}
-
-.timer-bottom .reset-btn.on{
-  background-color: #FB7099;
-  color:white;
-}
-
 .timer-bottom button::before{
   margin-right: 5px;
   display: inline-block;
@@ -138,8 +132,44 @@ body{
   vertical-align: bottom;
 }
 
-.timer-bottom .reset-btn::before{
+.stop-btn{
+  display: none;
+}
+
+.stop-btn.visible{
+  background-color: rgb(125, 206, 125);
+  color:white;
+  display: block;
+}
+
+.stop-btn.visible::before{
+  background-image: url('../img/icon-stop.svg');
+}
+
+.reset-btn::before{
   background-image: url('../img/icon-reset-disabled.svg');
+}
+
+.reset-btn.on{
+  background-color: #FB7099;
+  color:white;
+}
+
+.reset-btn.on::before{
+  background-image: url('../img/icon-reset.svg');
+}
+
+.start-btn.hidden{
+  display: none
+}
+
+.start-btn.on{
+  background-color: #5180FF;
+  color:white;
+}
+
+.start-btn.on::before{
+  background-image: url('../img/icon-start.svg');
 }
 
 .coorporation{
